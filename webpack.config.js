@@ -66,18 +66,14 @@ module.exports = {
   devServer: {
     clientLogLevel: 'warning',
     historyApiFallback: {
-      rewrites: [
-        {
-          from: /.*/,
-          to: path.posix.join('/', 'index.html'),
-        },
-      ],
+      rewrites: [{ from: /.*/, to: 'index.html' }],
     },
     compress: true,
-    host: HOST,
-    port: PORT,
+    host: HOST || '0.0.0.0',
+    port: PORT || 3000,
     publicPath: '/',
     quiet: true,
+    hot: true,
   },
   performance: {
     hints: false,
@@ -90,6 +86,12 @@ module.exports = {
       }),
     ],
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'style.css',
+    }),
+    new VueLoaderPlugin(),
+  ],
 };
 
 if (process.env.NODE_ENV === 'production') {
@@ -104,9 +106,5 @@ if (process.env.NODE_ENV === 'production') {
     new webpack.LoaderOptionsPlugin({
       minimize: true,
     }),
-    new MiniCssExtractPlugin({
-      filename: 'style.css',
-    }),
-    new VueLoaderPlugin(),
   ]);
 }

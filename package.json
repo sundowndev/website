@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --hot --config webpack.config.js",
+    "dev": "webpack-dev-server --inline --progress --hot --watch --config webpack.config.js",
     "start": "npm run build && npm run lint && npm run test",
     "build": "cross-env NODE_ENV=production webpack",
     "build:watch": "cross-env NODE_ENV=development webpack --watch",
