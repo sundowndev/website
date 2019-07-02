@@ -1,5 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 const HOST = '127.0.0.1';
 const PORT = 3000;
@@ -43,6 +46,15 @@ module.exports = {
           name: '[name].[ext]?[hash]',
         },
       },
+      {
+        test: /\.css$/,
+        use: [
+          process.env.NODE_ENV !== 'production'
+            ? 'vue-style-loader'
+            : MiniCssExtractPlugin.loader,
+          'css-loader',
+        ],
+      },
     ],
   },
   resolve: {
@@ -71,6 +83,13 @@ module.exports = {
     hints: false,
   },
   devtool: '#eval-source-map',
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        sourceMap: true,
+      }),
+    ],
+  },
 };
 
 if (process.env.NODE_ENV === 'production') {
@@ -82,14 +101,12 @@ if (process.env.NODE_ENV === 'production') {
         NODE_ENV: '"production"',
       },
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
-      compress: {
-        warnings: false,
-      },
-    }),
     new webpack.LoaderOptionsPlugin({
       minimize: true,
     }),
+    new MiniCssExtractPlugin({
+      filename: 'style.css',
+    }),
+    new VueLoaderPlugin(),
   ]);
 }
