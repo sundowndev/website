@@ -1,7 +1,6 @@
 <template>
-  <div id="app">
-    <router-link to="/">Home</router-link>
-    <router-view></router-view>
+  <div>
+    <div class="greeting">Welcome!</div>
   </div>
 </template>
 
@@ -12,6 +11,13 @@ export default Vue.extend({
   data() {
     return {};
   },
-  components: {}
+  methods: {},
+  computed: {}
 });
 </script>
+
+<style>
+.greeting {
+  font-size: 20px;
+}
+</style>

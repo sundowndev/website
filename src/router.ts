@@ -1,18 +1,18 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import Home from './components/Hello.vue';
-import notFound from './components/NotFound.vue';
+// Views
+import Home from './views/home.vue';
+import NotFound from './views/notFound.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
   { path: '', name: 'home', component: Home },
-  { path: '/hi', name: 'hello', component: notFound },
   {
     path: '/notfound',
     name: 'not_found',
-    component: notFound,
+    component: NotFound,
   },
   {
     path: '*',
@@ -20,4 +20,4 @@ const routes = [
   },
 ];
 
-export default new VueRouter({ mode: 'history', routes });
+export default new VueRouter({ routes });
