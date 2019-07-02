@@ -1,7 +1,6 @@
-<!-- src/components/Hello.vue -->
 <template>
   <div>
-    <div class="greeting">hey {{name}}{{exclamationMarks}}</div>
+    <div class="greeting">Hey {{ name }} {{ exclamationMarks }}</div>
     <button @click="decrement">-</button>
     <button @click="increment">+</button>
   </div>
