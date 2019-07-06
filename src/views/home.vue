@@ -1,35 +1,33 @@
 <template>
-  <div>
-    <div class="container main-content fade-in" style="opacity:1;">
-      <section class="section text-center">
-        <img :src="links.avatar" width="128" height="auto" alt />
+  <div class="container main-content fade-in" style="opacity:1;">
+    <section class="section text-center">
+      <img src="../static/avatar.jpg" width="128" height="auto" alt />
 
-        <h1 class="title-section">
-          Raphael
-          <a href="#" target="_blank">@sundowndev</a>
-        </h1>
+      <h1 class="title-section">
+        Raphael
+        <a :href="links.twitter" target="_blank">@sundowndev</a>
+      </h1>
 
-        <p>Web developer</p>
+      <p>Web development, Security and OSINT.</p>
 
-        <ul>
-          <li>
-            <router-link to="/articles">Write-ups</router-link>
-          </li>
-          <li>
-            <a :href="links.github" target="_blank">GitHub</a>
-          </li>
-          <li>
-            <router-link to="/resources">Resources</router-link>
-          </li>
-          <li>
-            <router-link to="/stats">Stats</router-link>
-          </li>
-          <li>
-            <router-link to="/contact">Contact</router-link>
-          </li>
-        </ul>
-      </section>
-    </div>
+      <ul>
+        <li>
+          <router-link :to="{ name: 'articles'}">Write-ups</router-link>
+        </li>
+        <li>
+          <a :href="links.github" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <router-link :to="{ name: 'resources'}">Resources</router-link>
+        </li>
+        <!-- <li>
+            <router-link :to="{ name: 'stats' }">Stats</router-link>
+        </li>-->
+        <li>
+          <router-link :to="{ name: 'contact' }">Contact</router-link>
+        </li>
+      </ul>
+    </section>
   </div>
 </template>
 
@@ -40,8 +38,7 @@ export default Vue.extend({
   data() {
     return {
       links: {
-        avatar:
-          "https://pbs.twimg.com/profile_images/1079098642395484160/w60smTHG_400x400.jpg",
+        twitter: "https://twitter.com/sundowndev",
         github: "https://github.com/sundowndev"
       }
     };
@@ -57,7 +54,8 @@ export default Vue.extend({
 }
 
 .section img {
-  border-radius: 100px;
+  border-radius: 130px;
+  margin-bottom: 30px;
 }
 
 ul li {

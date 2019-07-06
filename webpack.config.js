@@ -11,8 +11,8 @@ module.exports = {
   mode: process.env.NODE_ENV || 'production',
   entry: './src/index.ts',
   output: {
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
+    path: path.resolve(__dirname, './public'),
+    publicPath: '/public/',
     filename: 'build.js',
   },
   module: {
