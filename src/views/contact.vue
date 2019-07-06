@@ -14,7 +14,7 @@
       <h2>Email</h2>
       <p>
         {{email}} -- 0x67da650228bcbfe8 --
-        <a href="./publickey.asc">PUBLIC KEY</a>
+        <a href="./public/publickey.asc">PUBLIC KEY</a>
       </p>
     </section>
   </div>
