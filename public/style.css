@@ -1,3 +1,22 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Reset style */
 html,
 body,
@@ -115,12 +134,12 @@ q {
 }
 blockquote:before,
 blockquote:after {
-  content: '';
+  content: "";
   content: none;
 }
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -130,41 +149,39 @@ table {
 
 /* FONT PATHS */
 @font-face {
-  font-family: 'Hack';
-  src: url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/fonts/hack-regular.woff2?sha=3114f1256')
-      format('woff2'),
-    url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/fonts/hack-regular.woff?sha=3114f1256')
-      format('woff');
+  font-family: "Hack";
+  src: url("/fonts/hack-regular.woff2") format("woff2"),
+    url("/fonts/hack-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Hack';
-  src: url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/fonts/hack-bold.woff2?sha=3114f1256')
-      format('woff2'),
-    url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/fonts/hack-bold.woff?sha=3114f1256')
-      format('woff');
+  font-family: "Hack";
+  src: url("/fonts/hack-bold.woff2") format("woff2"),
+    url("/fonts/hack-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
-@font-face {
-  font-family: 'Hack';
-  src: url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/fonts/hack-italic.woff2?sha=3114f1256')
-      format('woff2'),
-    url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/fonts/hack-italic.woff?sha=3114f1256')
-      format('woff');
+
+/* @font-face {
+  font-family: "Hack";
+  src: url("/fonts/hack-italic.woff2")
+      format("woff2"),
+    url("/fonts/hack-italic.woff")
+      format("woff");
   font-weight: 400;
   font-style: italic;
 }
+
 @font-face {
-  font-family: 'Hack';
-  src: url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/fonts/hack-bolditalic.woff2?sha=3114f1256')
-      format('woff2'),
-    url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/fonts/hack-bolditalic.woff?sha=3114f1256')
-      format('woff');
+  font-family: "Hack";
+  src: url("/fonts/hack-bolditalic.woff2")
+      format("woff2"),
+    url("/fonts/hack-bolditalic.woff")
+      format("woff");
   font-weight: 700;
   font-style: italic;
-}
+} */
 
 /* Actual style */
 body {
@@ -201,18 +218,18 @@ body {
   justify-content: center;
 }
 @media (min-width: 1280px) {
-  .bg-image {
+.bg-image {
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-filter: blur(3px);
     filter: blur(3px);
     background-size: 102%;
     background-position: center;
-  }
-  .bg-overlay.transparent {
+}
+.bg-overlay.transparent {
     opacity: 0.9;
-  }
-  .menu-social {
+}
+.menu-social {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -223,31 +240,31 @@ body {
     justify-content: flex-end;
     padding-top: 50px;
     width: 100%;
-  }
-  .menu-social .icon {
+}
+.menu-social .icon {
     font-size: 20px;
     color: #ffffff;
     -webkit-transition: 0.25s;
     transition: 0.25s;
     margin-left: 25px;
-  }
-  .menu-social .icon:hover {
+}
+.menu-social .icon:hover {
     color: #ffc400;
-  }
+}
 }
 @media (max-width: 900px) {
-  .container {
+.container {
     margin: 0 30px;
-  }
-  .container.main-content {
+}
+.container.main-content {
     width: 92%;
     min-height: 0;
     margin-top: 50px;
     margin-bottom: 50px;
-  }
-  .container.main-content .section {
+}
+.container.main-content .section {
     width: 100%;
-  }
+}
 }
 section {
   margin: auto;
@@ -291,10 +308,12 @@ a:hover {
   display: inline-block;
 }
 
+
 ul li a {
   margin: 0 20px 0 0;
   line-height: 30px;
 }
+
 
 .section.text-center {
   text-align: center;
@@ -310,9 +329,11 @@ ul li a {
   margin: 0 20px;
 }
 
+
 ul li a {
   margin: 0 20px 0 0;
   line-height: 30px;
 }
+
 
 /*# sourceMappingURL=style.css.map*/

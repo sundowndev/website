@@ -156,42 +156,18 @@ table {
 /* FONT PATHS */
 @font-face {
   font-family: "Hack";
-  src: url("https://cdn.jsdelivr.net/npm/hack-font@3/build/web/fonts/hack-regular.woff2?sha=3114f1256")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/npm/hack-font@3/build/web/fonts/hack-regular.woff?sha=3114f1256")
-      format("woff");
+  src: url("/fonts/hack-regular.woff2") format("woff2"),
+    url("/fonts/hack-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Hack";
-  src: url("https://cdn.jsdelivr.net/npm/hack-font@3/build/web/fonts/hack-bold.woff2?sha=3114f1256")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/npm/hack-font@3/build/web/fonts/hack-bold.woff?sha=3114f1256")
-      format("woff");
+  src: url("/fonts/hack-bold.woff2") format("woff2"),
+    url("/fonts/hack-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
-}
-
-@font-face {
-  font-family: "Hack";
-  src: url("https://cdn.jsdelivr.net/npm/hack-font@3/build/web/fonts/hack-italic.woff2?sha=3114f1256")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/npm/hack-font@3/build/web/fonts/hack-italic.woff?sha=3114f1256")
-      format("woff");
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Hack";
-  src: url("https://cdn.jsdelivr.net/npm/hack-font@3/build/web/fonts/hack-bolditalic.woff2?sha=3114f1256")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/npm/hack-font@3/build/web/fonts/hack-bolditalic.woff?sha=3114f1256")
-      format("woff");
-  font-weight: 700;
-  font-style: italic;
 }
 
 /* Actual style */
