@@ -7,22 +7,35 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    volumes:
-      - ./public:/usr/share/nginx/html/public:rw
     environment:
       - NODE_ENV=production
-    ports:
-      - '8080:80'
     networks:
       - default
       - web
-    command: ["nginx", "-g", "daemon off;"]
+    command: ['nginx', '-g', 'daemon off;']
     labels:
-      - "traefik.docker.network=web"
-      - "traefik.enable=true"
-      - "traefik.basic.frontend.rule=Host:crvx.fr"
-      - "traefik.basic.port=8080"
-      - "traefik.basic.protocol=http"
+      - 'traefik.docker.network=web'
+      - 'traefik.enable=true'
+      - 'traefik.domain=crvx.fr'
+      - 'traefik.basic.frontend.rule=Host:crvx.fr'
+      - 'traefik.basic.port=80'
+      - 'traefik.basic.protocol=http'
+
+  # app-dev:
+  #   container_name: crvx_client_dev
+  #   restart: on-failure
+  #   build:
+  #     context: .
+  #     dockerfile: ./Dockerfile
+  #   volumes:
+  #     - ./public:/usr/share/nginx/html/public:rw
+  #   environment:
+  #     - NODE_ENV=development
+  #   ports:
+  #     - '8080:80'
+  #   networks:
+  #     - default
+  #   command: ['nginx', '-g', 'daemon off;']
 
 networks:
   web:
