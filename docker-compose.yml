@@ -28,7 +28,7 @@ services:
 #       context: .
 #       dockerfile: ./Dockerfile
 #     volumes:
-#       - ./public:/usr/share/nginx/html/public:rw
+#       - ./public:/usr/share/nginx/html:rw
 #     environment:
 #       - NODE_ENV=development
 #     ports:
