@@ -21,21 +21,24 @@ services:
       - 'traefik.basic.port=80'
       - 'traefik.basic.protocol=http'
 
-  # app-dev:
-  #   container_name: crvx_client_dev
-  #   restart: on-failure
-  #   build:
-  #     context: .
-  #     dockerfile: ./Dockerfile
-  #   volumes:
-  #     - ./public:/usr/share/nginx/html/public:rw
-  #   environment:
-  #     - NODE_ENV=development
-  #   ports:
-  #     - '8080:80'
-  #   networks:
-  #     - default
-  #   command: ['nginx', '-g', 'daemon off;']
+#   app-dev:
+#     container_name: crvx_client_dev
+#     restart: on-failure
+#     build:
+#       context: .
+#       dockerfile: ./Dockerfile
+#     volumes:
+#       - ./public:/usr/share/nginx/html/public:rw
+#     environment:
+#       - NODE_ENV=development
+#     ports:
+#       - '8080:80'
+#     networks:
+#       - default
+#     command: ['nginx', '-g', 'daemon off;']
+
+# volumes:
+#   app-dev:
 
 networks:
   web:
