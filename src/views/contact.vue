@@ -7,14 +7,14 @@
       <h2>Social media</h2>
       <p>
         You can find me on
-        <a :href="links.twitter" target="_blank">Twitter</a> and
-        <a :href="links.linkedin" target="_blank">Linkedin</a>.
+        <a :href="config.links.social.twitter" target="_blank">Twitter</a> and
+        <a :href="config.links.social.linkedin" target="_blank">Linkedin</a>.
       </p>
 
       <h2>Email</h2>
       <p>
-        {{email}} -- 0x67da650228bcbfe8 --
-        <a href="./public/publickey.asc">PUBLIC KEY</a>
+        {{ email }} -- 0x67da650228bcbfe8 --
+        <a href="./publickey.asc">PUBLIC KEY</a>
       </p>
     </section>
   </div>
@@ -22,15 +22,13 @@
 
 <script lang="ts">
 import Vue from "vue";
+import config from "../config";
 
 export default Vue.extend({
   data() {
     return {
-      email: "<raphael.at.crvx.fr>",
-      links: {
-        twitter: "https://pbs.twimg.com/",
-        linkedin: "https://pbs.twimg.com/"
-      }
+      config,
+      email: "<raphael.at.crvx.fr>"
     };
   }
 });

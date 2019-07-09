@@ -1,10 +1,10 @@
 <template>
   <div class="container main-content fade-in" style="opacity:1;">
-    <section class="section">
-      <router-link :to="{ name: 'home'}" id="back-link">Back</router-link>
-      <h1 class="title-section">Oups, page not found!</h1>
-
-      <p>zfdzafa</p>
+    <section class="section text-center">
+      <img src="../static/error.gif" alt />
+      <p>
+        <router-link :to="{ name: 'home'}" id="back-link">Take me home, cause I don't remember</router-link>
+      </p>
     </section>
   </div>
 </template>

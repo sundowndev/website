@@ -6,7 +6,7 @@
 
       <p>
         You can follow my stories on
-        <a :href="links.medium">Medium</a>.
+        <a :href="config.links.social.medium">Medium</a>.
       </p>
 
       <ul>
@@ -22,13 +22,12 @@
 
 <script lang="ts">
 import Vue from "vue";
+import config from "../config";
 
 export default Vue.extend({
   data() {
     return {
-      links: {
-        medium: "https://medium.com/@SundownDEV"
-      },
+      config,
       articles: [
         {
           title: "Building an OSINT Reconnaissance Tool from Scratch",

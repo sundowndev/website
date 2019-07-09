@@ -1,11 +1,11 @@
 <template>
   <div class="container main-content fade-in" style="opacity:1;">
     <section class="section text-center">
-      <img src="../static/avatar.jpg" width="128" height="auto" alt />
+      <img src="../static/avatar.jpg" class="rounded" width="128" height="auto" alt />
 
       <h1 class="title-section">
         Raphael
-        <a :href="links.twitter" target="_blank">@sundowndev</a>
+        <a :href="config.links.social.twitter" target="_blank">@sundowndev</a>
       </h1>
 
       <p>Web development, Security and OSINT.</p>
@@ -15,7 +15,7 @@
           <router-link :to="{ name: 'articles'}">Write-ups</router-link>
         </li>
         <li>
-          <a :href="links.github" target="_blank">GitHub</a>
+          <a :href="config.links.social.github" target="_blank">GitHub</a>
         </li>
         <li>
           <router-link :to="{ name: 'resources'}">Resources</router-link>
@@ -33,14 +33,12 @@
 
 <script lang="ts">
 import Vue from "vue";
+import config from "../config";
 
 export default Vue.extend({
   data() {
     return {
-      links: {
-        twitter: "https://twitter.com/sundowndev",
-        github: "https://github.com/sundowndev"
-      }
+      config
     };
   },
   methods: {},
@@ -49,15 +47,6 @@ export default Vue.extend({
 </script>
 
 <style>
-.section.text-center {
-  text-align: center;
-}
-
-.section img {
-  border-radius: 130px;
-  margin-bottom: 30px;
-}
-
 ul li {
   display: inline-block;
 }

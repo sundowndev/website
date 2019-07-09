@@ -185,6 +185,19 @@ body {
   margin-top: 30px;
 }
 
+.text-center {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.section img.rounded {
+  border-radius: 130px;
+  margin-bottom: 30px;
+}
+
 .container {
   z-index: 3;
   position: relative;
