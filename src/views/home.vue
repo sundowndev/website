@@ -8,7 +8,7 @@
         <a :href="config.links.social.twitter" target="_blank">@sundowndev</a>
       </h1>
 
-      <p>Web development, Security and OSINT.</p>
+      <p>Web developer, also security and OSINT enthusiast.</p>
 
       <ul>
         <li>
