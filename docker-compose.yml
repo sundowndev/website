@@ -20,6 +20,14 @@ services:
       - 'traefik.basic.frontend.rule=Host:crvx.fr'
       - 'traefik.basic.port=80'
       - 'traefik.basic.protocol=http'
+      - 'traefik.frontend.headers.SSLRedirect=true'
+      - 'traefik.frontend.headers.STSSeconds=315360000'
+      - 'traefik.frontend.headers.browserXSSFilter=true'
+      - 'traefik.frontend.headers.contentTypeNosniff=true'
+      - 'traefik.frontend.headers.forceSTSHeader=true'
+      - "traefik.frontend.headers.contentSecurityPolicy=default-src 'self';frame-ancestors 'self';style-src 'self';script-src 'self';img-src 'self' data:;font-src 'self'"
+      - 'traefik.frontend.headers.referrerPolicy=no-referrer'
+      - 'traefik.frontend.headers.frameDeny=true'
 
 #   app-dev:
 #     container_name: crvx_client_dev
