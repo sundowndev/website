@@ -1,32 +1,30 @@
 <template>
-  <div class="container main-content fade-in" style="opacity:1;">
-    <section class="section">
-      <router-link :to="{ name: 'home'}" id="back-link">Back</router-link>
-      <h1 class="title-section">Resources</h1>
+  <section class="section">
+    <router-link :to="{ name: 'home'}" id="back-link">Back</router-link>
+    <h1 class="title-section">Resources</h1>
 
-      <p>Here, you can find awesome resources related to web, security or OSINT in general.</p>
+    <p>Here, you can find awesome resources related to web, security or OSINT in general.</p>
 
-      <h1>General web resources</h1>
+    <h1>General web resources</h1>
 
-      <ul>
-        <li v-for="(item, index) in links.web" :key="index">
-          <h2>
-            <a :href="item.url" target="_blank">{{ item.title }}</a>
-          </h2>
-        </li>
-      </ul>
+    <ul>
+      <li v-for="(item, index) in links.web" :key="index">
+        <h2>
+          <a :href="item.url" target="_blank">{{ item.title }}</a>
+        </h2>
+      </li>
+    </ul>
 
-      <h1>OSINT resources</h1>
+    <h1>OSINT resources</h1>
 
-      <ul>
-        <li v-for="(item, index) in links.osint" :key="index">
-          <h2>
-            <a :href="item.url" target="_blank">{{ item.title }}</a>
-          </h2>
-        </li>
-      </ul>
-    </section>
-  </div>
+    <ul>
+      <li v-for="(item, index) in links.osint" :key="index">
+        <h2>
+          <a :href="item.url" target="_blank">{{ item.title }}</a>
+        </h2>
+      </li>
+    </ul>
+  </section>
 </template>
 
 <script lang="ts">
@@ -54,7 +52,7 @@ export default Vue.extend({
             url: "https://restoreprivacy.com/privacy-tools/"
           },
           {
-            title: "Developpez, french #1 IT & tech news",
+            title: "Developpez, the best of tech news in french",
             url: "https://www.developpez.com/"
           },
           {

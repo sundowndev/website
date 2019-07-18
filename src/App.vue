@@ -1,6 +1,8 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
+  <div id="app" class="container main-content">
+    <transition name="fade" mode="out-in" :duration="300">
+      <router-view/>
+    </transition>
   </div>
 </template>
 
@@ -10,13 +12,19 @@ import Vue from "vue";
 export default Vue.extend({
   data() {
     return {};
-  },
-  components: {}
+  }
 });
 </script>
 
 
 <style>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s ease;
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
+
 /* Reset style */
 html,
 body,
@@ -183,6 +191,14 @@ body {
 
 .margin-top-30 {
   margin-top: 30px;
+}
+
+.margin-bottom {
+  margin-bottom: 15px;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
 }
 
 .text-center {

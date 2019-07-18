@@ -1,23 +1,21 @@
 <template>
-  <div class="container main-content fade-in" style="opacity:1;">
-    <section class="section">
-      <router-link :to="{ name: 'home'}" id="back-link">Back</router-link>
-      <h1 class="title-section">Write-ups</h1>
+  <section class="section">
+    <router-link :to="{ name: 'home'}" id="back-link">Back</router-link>
+    <h1 class="title-section">Write-ups</h1>
 
-      <p>
-        You can follow my stories on
-        <a :href="config.links.social.medium">Medium</a>.
-      </p>
+    <p>
+      You can follow my stories on
+      <a :href="config.links.social.medium">Medium</a>.
+    </p>
 
-      <ul>
-        <li v-for="(item, index) in articles" :key="index">
-          <h2>
-            <a :href="item.url" target="_blank">{{ item.title }}</a>
-          </h2>
-        </li>
-      </ul>
-    </section>
-  </div>
+    <ul>
+      <li v-for="(item, index) in articles" :key="index">
+        <h2>
+          <a :href="item.url" target="_blank">{{ item.title }}</a>
+        </h2>
+      </li>
+    </ul>
+  </section>
 </template>
 
 <script lang="ts">
