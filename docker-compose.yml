@@ -7,6 +7,8 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
     environment:
       - NODE_ENV=production
     networks:
@@ -28,25 +30,6 @@ services:
       - "traefik.frontend.headers.contentSecurityPolicy=default-src 'self';frame-ancestors 'self';style-src 'self';script-src 'self';img-src 'self';font-src 'self'"
       - 'traefik.frontend.headers.referrerPolicy=no-referrer'
       - 'traefik.frontend.headers.frameDeny=true'
-
-#   app-dev:
-#     container_name: crvx_client_dev
-#     restart: on-failure
-#     build:
-#       context: .
-#       dockerfile: ./Dockerfile
-#     volumes:
-#       - ./public:/usr/share/nginx/html:rw
-#     environment:
-#       - NODE_ENV=development
-#     ports:
-#       - '8080:80'
-#     networks:
-#       - default
-#     command: ['nginx', '-g', 'daemon off;']
-
-# volumes:
-#   app-dev:
 
 networks:
   web:
