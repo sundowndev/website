@@ -1,21 +1,10 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s ease;
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
 
 /* Reset style */
 html,
@@ -174,6 +163,12 @@ body {
 }
 .margin-top-30 {
   margin-top: 30px;
+}
+.margin-bottom {
+  margin-bottom: 15px;
+}
+.margin-bottom-30 {
+  margin-bottom: 30px;
 }
 .text-center {
   text-align: center;
