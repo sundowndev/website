@@ -3,7 +3,7 @@
     <img src="../static/spy.svg" class="margin-bottom" width="128" height="auto" alt />
 
     <h1 class="title-section">
-      Raphael
+      Raphaël
       <a :href="config.links.social.twitter" target="_blank">@sundowndev</a>
     </h1>
 
