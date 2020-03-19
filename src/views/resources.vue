@@ -52,12 +52,12 @@ export default Vue.extend({
             url: "https://restoreprivacy.com/privacy-tools/"
           },
           {
-            title: "Developpez, the best of tech news in french",
-            url: "https://www.developpez.com/"
-          },
-          {
             title: "The Hacker News, the independent cybersecurity news source",
             url: "https://thehackernews.com/"
+          },
+          {
+            title: "PrivacyTools provides services, tools and knowledge to protect your privacy",
+            url: "https://www.privacytools.io/"
           }
         ],
         osint: [
