@@ -28,6 +28,11 @@ export default Vue.extend({
       config,
       articles: [
         {
+          title: "Is Tomorrow's YouTube libre ? A dive into the video streaming industry (french whitepaper)",
+          url:
+            "https://sundowndev.github.io/livre-blanc-video"
+        },
+        {
           title: "Building an OSINT Reconnaissance Tool from Scratch",
           url:
             "https://medium.com/@SundownDEV/phone-number-scanning-osint-recon-tool-6ad8f0cac27b"
