@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: proxy
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      run: proxy
+  template:
+    metadata:
+      labels:
+        run: proxy
+    spec:
+      containers:
+      - image: nginx
+        imagePullPolicy: Always
+        name: proxy
+        ports:
+        - containerPort: 8080
+          protocol: TCP
