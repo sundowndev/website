@@ -1,6 +1,6 @@
 # Website
 
-<div align="center">
+<div align="left">
   <a href="https://github.com/sundowndev/website/actions">
     <img src="https://img.shields.io/endpoint.svg?url=https://actions-badge.atrox.dev/sundowndev/website/badge?ref=master" alt="build status" />
   </a>
