@@ -19,5 +19,5 @@ spec:
         name: crvx-app
         imagePullPolicy: Always
         ports:
-        - containerPort: 5000
+        - containerPort: 80
           name: http
