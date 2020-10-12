@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: crvx-app
+  name: crvx-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: crvx-app
+  template:
+    metadata:
+      labels:
+        app: crvx-app
+    spec:
+      containers:
+      - image: sundowndev/website:latest
+        name: crvx-app
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 5000
+          name: http
