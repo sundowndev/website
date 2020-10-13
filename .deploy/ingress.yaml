@@ -1,28 +1,25 @@
-apiVersion: networking.k8s.io/v1
+apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
-  name: crvx-ingress
+  name: argocd-server-ingress
+  namespace: argocd
   annotations:
-    cert-manager.io/cluster-issuer: letsencrypt-staging
-    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: letsencrypt-prod
     kubernetes.io/tls-acme: "true"
-    nginx.ingress.kubernetes.io/ssl-passthrough: "true"
-    # If you encounter a redirect loop or are getting a 307 response code
-    # then you need to force the nginx ingress to connect to the backend using HTTPS.
-    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/ssl-passthrough: "false"
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
 spec:
   rules:
     - host: crvx.fr
       http:
         paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: crvx-app-svc
-                port:
-                  number: 80
+          - backend:
+              serviceName: crvx-app-svc
+              servicePort: http
+            path: /
   tls:
     - hosts:
         - crvx.fr
-      secretName: argocd-secret # do not change, this is provided by Argo CD
+      secretName: crvx-fr-tls
