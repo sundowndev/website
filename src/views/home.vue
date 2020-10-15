@@ -13,7 +13,7 @@
       <a :href="config.links.social.twitter" target="_blank">@sundowndev</a>
     </h1>
 
-    <p>Web developer, also security and OSINT enthusiast.</p>
+    <p>Hi, I'm a Software Engineer from Reunion Island!</p>
 
     <ul>
       <li>
