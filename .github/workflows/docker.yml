@@ -16,7 +16,7 @@ jobs:
           name: sundowndev/website
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          tags: 'latest,${{ env.GITHUB_SHA }}'
+          tags: 'latest,${GITHUB_SHA}'
 
       - name: Install yaml processor
         run: |
@@ -25,10 +25,10 @@ jobs:
 
       - name: Commit new tag
         run: |
-          ./yq w ./.deploy/deployment.yaml 'spec.template.spec.containers[0].image' sundowndev/website:${{ env.GITHUB_SHA }} -i
-          git remote set-url origin https://${{ secrets.GH_USER }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ secrets.GH_USER }}/website.git
+          ./yq w ./.deploy/deployment.yaml 'spec.template.spec.containers[0].image' sundowndev/website:$GITHUB_SHA -i
+          git remote set-url origin https://${{ secrets.GH_USER }}:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_SHA/website.git
           git config --global user.email "${{ secrets.GH_USER }}@users.noreply.github.com"
           git config --global user.name "${{ secrets.GH_USER }}"
-          git add . && git commit -m "deploy: updating docker tag [skip-ci]"
+          git add ./.deploy && git commit -m "deploy: updating docker tag [skip-ci]"
           git pull origin master --rebase
           git push origin master
