@@ -13,7 +13,7 @@
 
 ## Stack
 
-Vue 3.x + Typescript + Webpack
+Vue 3.x + Typescript
 
 ## Project setup
 ```
