@@ -15,9 +15,9 @@ spec:
         app: crvx-app
     spec:
       containers:
-      - image: sundowndev/website:latest
-        name: crvx-app
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 80
-          name: http
+        - image: 'sundowndev/website:'
+          name: crvx-app
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+              name: http
