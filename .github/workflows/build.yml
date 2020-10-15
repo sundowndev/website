@@ -16,9 +16,12 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Install dependencies
       run: yarn
+
     - name: Build
       run: yarn build
+
     - name: Test
-      run: yarn test
+      run: yarn test:e2e
+
     - name: Lint
       run: yarn lint

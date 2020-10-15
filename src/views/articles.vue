@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <router-link :to="{ name: 'home'}" id="back-link">Back</router-link>
+    <router-link :to="{ name: 'home' }" id="back-link">Back</router-link>
     <h1 class="title-section">Write-ups</h1>
 
     <p>

@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <router-link :to="{ name: 'home'}" id="back-link">Back</router-link>
+    <router-link :to="{ name: 'home' }" id="back-link">Back</router-link>
     <h1 class="title-section">Contact</h1>
 
     <h2>Social media</h2>
@@ -32,5 +32,4 @@ export default Vue.extend({
 });
 </script>
 
-<style>
-</style>
+<style></style>
