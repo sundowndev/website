@@ -3,20 +3,47 @@
     <transition name="fade" mode="out-in" :duration="300">
       <router-view />
     </transition>
+
+    <span id="bottom-note">
+      <a :href="repository" target="_blank">
+        <img src="./static/fork-banner.png" />
+      </a>
+    </span>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import config from "./config";
 
 export default Vue.extend({
   data() {
-    return {};
+    return {
+      repository: config.repository
+    };
   }
 });
 </script>
 
 <style>
+#bottom-note {
+  right: 0;
+  position: fixed;
+  top: 0;
+  width: 149px;
+}
+
+#bottom-note img {
+  width: 100%;
+  height: auto;
+}
+
+#bottom-note a {
+  width: 100%;
+  height: auto;
+  border-bottom: none;
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s ease;
@@ -288,11 +315,15 @@ img {
   .container.main-content .section {
     width: 100%;
   }
+  #bottom-note {
+    width: 100px;
+  }
 }
 
 section {
   margin: auto;
   width: 100%;
+  padding: 80px 0 80px 0;
 }
 
 section.active {
@@ -310,6 +341,18 @@ section h2 {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 20px;
+  background: #393939;
+  color: #ffffff;
+  padding: 5px;
+  width: max-content;
+}
+
+section h3,
+section ul.list li {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: block;
 }
 
 section p {
