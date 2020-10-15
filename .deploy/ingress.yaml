@@ -19,7 +19,15 @@ spec:
               serviceName: crvx-app-svc
               servicePort: http
             path: /
+    - host: www.crvx.fr
+      http:
+        paths:
+          - backend:
+              serviceName: crvx-app-svc
+              servicePort: http
+            path: /
   tls:
     - hosts:
         - crvx.fr
+        - www.crvx.fr
       secretName: crvx-fr-tls
