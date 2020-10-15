@@ -1,9 +1,12 @@
 <template>
   <section class="section">
-    <router-link :to="{ name: 'home'}" id="back-link">Back</router-link>
+    <router-link :to="{ name: 'home' }" id="back-link">Back</router-link>
     <h1 class="title-section">Resources</h1>
 
-    <p>Here, you can find awesome resources related to web, security or OSINT in general.</p>
+    <p>
+      Here, you can find awesome resources related to web, security or OSINT in
+      general.
+    </p>
 
     <h1>General web resources</h1>
 
@@ -56,7 +59,8 @@ export default Vue.extend({
             url: "https://thehackernews.com/"
           },
           {
-            title: "PrivacyTools provides services, tools and knowledge to protect your privacy",
+            title:
+              "PrivacyTools provides services, tools and knowledge to protect your privacy",
             url: "https://www.privacytools.io/"
           }
         ],

@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container main-content">
     <transition name="fade" mode="out-in" :duration="300">
-      <router-view/>
+      <router-view />
     </transition>
   </div>
 </template>
@@ -16,13 +16,14 @@ export default Vue.extend({
 });
 </script>
 
-
 <style>
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s ease;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
 }
-.fade-enter, .fade-leave-active {
-  opacity: 0
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
 }
 
 /* Reset style */

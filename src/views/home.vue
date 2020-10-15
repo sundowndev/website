@@ -1,6 +1,12 @@
 <template>
   <section class="section text-center">
-    <img src="../static/spy.svg" class="margin-bottom" width="128" height="auto" alt />
+    <img
+      src="../static/spy.svg"
+      class="margin-bottom"
+      width="128"
+      height="auto"
+      alt
+    />
 
     <h1 class="title-section">
       Raphaël
@@ -11,13 +17,13 @@
 
     <ul>
       <li>
-        <router-link :to="{ name: 'articles'}">Write-ups</router-link>
+        <router-link :to="{ name: 'articles' }">Write-ups</router-link>
       </li>
       <li>
         <a :href="config.links.social.github" target="_blank">GitHub</a>
       </li>
       <li>
-        <router-link :to="{ name: 'resources'}">Resources</router-link>
+        <router-link :to="{ name: 'resources' }">Resources</router-link>
       </li>
       <!-- <li>
             <router-link :to="{ name: 'stats' }">Stats</router-link>
