@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     if: contains(toJson(github.event.commits), '[skipci]') == false
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
       - name: Publish to Registry
         id: publish
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@2.22
         with:
           name: sundowndev/website
           username: ${{ secrets.DOCKER_USERNAME }}
