@@ -1,13 +1,13 @@
-name: Docker Image CI
+name: Docker Image
 
 on:
   push:
     branches: master
 
 jobs:
-  build:
+  docker:
     runs-on: ubuntu-latest
-    if: contains(toJson(github.event.commits), '[skip deploy]') == false
+    if: contains(toJson(github.event.commits), '[skip-deploy]') == false
     steps:
       - uses: actions/checkout@v2
       - name: Publish to Registry
@@ -24,12 +24,12 @@ jobs:
           wget https://github.com/mikefarah/yq/releases/download/3.4.0/yq_linux_amd64 -O ./yq
           chmod +x ./yq
 
-      - name: Commit new tag
+      - name: Commit new image digest
         run: |
           ./yq w ./.deploy/deployment.yaml 'spec.template.spec.containers[0].image' ${{ steps.publish.outputs.digest }} -i
           git remote set-url origin https://${{ secrets.GH_USER }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ secrets.GH_USER }}/website.git
           git config --global user.email "${{ secrets.GH_USER }}@users.noreply.github.com"
           git config --global user.name "${{ secrets.GH_USER }}"
-          git add ./.deploy && git commit -m "deploy: update docker image digest [skip deploy]"
+          git add ./.deploy && git commit -m "deploy: update docker image digest [skip-deploy]"
           git pull origin master --rebase
           git push origin master
