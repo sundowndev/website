@@ -11,7 +11,7 @@
     </p>
 
     <h2>Email</h2>
-    <p>Professional inquiries only.</p>
+    <p>For professional inquiries only.</p>
     <p>
       {{ email }} --
       <a href="./publickey.asc">PGP PUBLIC KEY</a>
