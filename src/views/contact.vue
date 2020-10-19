@@ -11,7 +11,6 @@
     </p>
 
     <h2>Email</h2>
-    <p>For professional inquiries only.</p>
     <p>
       {{ email }} --
       <a href="./publickey.asc">PGP PUBLIC KEY</a>
@@ -22,8 +21,7 @@
       Yes! I'm looking for a remote job as a Go developer. I'm currently still
       junior, with over 2 years of experience but with strong skills in
       automation and software design. I have some skills in reverse engineering
-      and web scraping. I also have some experience with Kubernetes, Helm and
-      IaC (<a
+      and web scraping. I also have some experience with Kubernetes and IaC (<a
         href="https://github.com/sundowndev/website/tree/master/.deploy"
         target="_blank"
         >this website is actually backed by k8s</a
@@ -45,5 +43,3 @@ export default Vue.extend({
   }
 });
 </script>
-
-<style></style>
