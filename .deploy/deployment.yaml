@@ -5,7 +5,7 @@ metadata:
     app: crvx-app
   name: crvx-app
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: crvx-app
