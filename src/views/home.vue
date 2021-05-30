@@ -1,8 +1,8 @@
 <template>
   <section class="section text-center">
     <img
-      src="../static/spy.svg"
-      class="margin-bottom"
+      src="../static/avatar.jpg"
+      class="margin-bottom avatar"
       width="128"
       height="auto"
       alt
@@ -55,5 +55,9 @@ ul li {
 
 ul li a {
   margin: 0 20px;
+}
+
+.avatar {
+  border-radius: 50%;
 }
 </style>

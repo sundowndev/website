@@ -6,7 +6,7 @@
 
     <span id="bottom-note">
       <a :href="repository" target="_blank">
-        <img src="./static/fork-banner.png" />
+        <img src="./static/fork-banner.png" alt="" />
       </a>
     </span>
   </div>

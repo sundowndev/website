@@ -18,14 +18,9 @@
 
     <h2>Are you available for hire ?</h2>
     <p>
-      Yes! I'm looking for a remote job as a Go developer. I'm currently still
-      junior, with over 2 years of experience but with strong skills in
-      automation and software design. I have some skills in reverse engineering
-      and web scraping. I also have some experience with Kubernetes and IaC (<a
-        href="https://github.com/sundowndev/website/tree/master/.deploy"
-        target="_blank"
-        >this website is actually backed by k8s</a
-      >).
+      I'm currently working full-time on open source so I'm not actively looking
+      for a job. But I still work on freelance missions on my free time. Just
+      send me an email with details and you should get a quick feedback from me.
     </p>
   </section>
 </template>
