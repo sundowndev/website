@@ -14,6 +14,8 @@ metadata:
         add_header  X-Frame-Options SAMEORIGIN;
         add_header  X-Content-Type-Options nosniff;
         add_header  Referrer-Policy no-referrer;
+    external-dns.alpha.kubernetes.io/hostname: crvx.fr.,www.crvx.fr.
+    external-dns.alpha.kubernetes.io/ttl: 3600
 spec:
   rules:
     - host: crvx.fr
