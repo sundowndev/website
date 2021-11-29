@@ -5,7 +5,6 @@ metadata:
     app: crvx-app
   name: crvx-app
 spec:
-  replicas: 2
   strategy:
     type: RollingUpdate
   selector:
@@ -28,5 +27,5 @@ spec:
               memory: "64Mi"
               cpu: "100m"
             limits:
-              memory: "256Mi"
-              cpu: "200m"
+              memory: "128Mi"
+              cpu: "120m"
