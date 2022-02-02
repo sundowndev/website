@@ -7,7 +7,7 @@
     <p>
       I'm not really into social media but you can find me on
       <a :href="config.links.social.twitter" target="_blank">Twitter</a> and
-      <a :href="config.links.social.linkedin" target="_blank">Linkedin</a>.
+      <a :href="config.links.social.linkedin" target="_blank">LinkedIn</a>.
     </p>
 
     <h2>Email</h2>
@@ -18,9 +18,9 @@
 
     <h2>Are you available for hire ?</h2>
     <p>
-      I'm currently working full-time on open source so I'm not actively looking
-      for a job. But I still work on freelance missions on my free time. Just
-      send me an email with details and you should get a quick feedback from me.
+      No. I'm currently working full-time on open source at
+      <a href="https://snyk.io/" target="_blank">Snyk</a> so I'm not actively
+      looking for a job.
     </p>
   </section>
 </template>
