@@ -9,7 +9,7 @@ metadata:
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
     nginx.ingress.kubernetes.io/ssl-passthrough: "false"
     nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
-    external-dns.alpha.kubernetes.io/hostname: "crvx.fr.,www.crvx.fr."
+    external-dns.alpha.kubernetes.io/hostname: "crvx.fr.,www.crvx.fr.,raphael.crvx.fr."
     external-dns.alpha.kubernetes.io/ttl: "3600"
     nginx.ingress.kubernetes.io/configuration-snippet: |
         add_header  Content-Security-Policy "default-src 'self';frame-ancestors 'self';style-src 'self';script-src 'self';img-src 'self';font-src 'self'";
