@@ -9,8 +9,7 @@
     />
 
     <h1 class="title-section">
-      Raphaël
-      <a :href="config.links.social.twitter" target="_blank">@sundowndev</a>
+      Raphaël Cerveaux
     </h1>
 
     <p>Hi, I'm a Software Engineer from Reunion Island 🇷🇪 🇫🇷</p>
@@ -20,7 +19,7 @@
         <router-link :to="{ name: 'articles' }">Write-ups</router-link>
       </li>
       <li>
-        <a :href="config.links.social.github" target="_blank">GitHub</a>
+        <router-link :to="{ name: 'work' }">Work</router-link>
       </li>
       <li>
         <router-link :to="{ name: 'resources' }">Resources</router-link>

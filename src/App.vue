@@ -357,7 +357,7 @@ section ul.list li {
 
 section p {
   font-weight: 300;
-  line-height: 26px;
+  line-height: 32px;
   margin-bottom: 30px;
 }
 
