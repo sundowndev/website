@@ -1,9 +1,9 @@
 <template>
   <section class="section text-center">
-    <img src="../static/error.gif" alt />
+    <div><img src="../static/error.gif" alt /></div>
     <p>
       <router-link :to="{ name: 'home' }" id="back-link"
-        >Take me home, cause I don't remember</router-link
+        >Take me home, please</router-link
       >
     </p>
   </section>

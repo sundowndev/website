@@ -13,14 +13,7 @@
     <h2>Email</h2>
     <p>
       {{ email }} --
-      <a href="./publickey.asc">PGP PUBLIC KEY</a>
-    </p>
-
-    <h2>Are you available for hire ?</h2>
-    <p>
-      No. I'm currently working full-time on open source at
-      <a href="https://snyk.io/" target="_blank">Snyk</a> so I'm not actively
-      looking for a job.
+      <a href="/raphael@crvx.fr.gpg">🔑 PGP PUBLIC KEY</a>
     </p>
   </section>
 </template>
