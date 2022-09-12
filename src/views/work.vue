@@ -33,9 +33,10 @@
 
     <h2>Are you available for hire ?</h2>
     <p>
-      No. I'm currently working full-time on open source at
-      <a href="https://snyk.io/" target="_blank">Snyk</a> so I'm not actively
-      looking for a job.
+      No. I'm currently working full-time on independent open source projects,
+      so I'm not actively looking for a job. If you're interested into donating
+      or sponsoring me, please feel free to
+      <router-link :to="{ name: 'contact' }">send an email</router-link>.
     </p>
   </section>
 </template>
