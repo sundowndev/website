@@ -1,4 +1,4 @@
-apiVersion: networking.k8s.io/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: crvx-app-ingress
@@ -22,23 +22,32 @@ spec:
       http:
         paths:
           - backend:
-              serviceName: crvx-app-svc
-              servicePort: http
+              service:
+                name: crvx-app-svc
+                port:
+                  name: http
             path: /
+            pathType: Prefix
     - host: www.crvx.fr
       http:
         paths:
           - backend:
-              serviceName: crvx-app-svc
-              servicePort: http
+              service:
+                name: crvx-app-svc
+                port:
+                  name: http
             path: /
+            pathType: Prefix
     - host: raphael.crvx.fr
       http:
         paths:
           - backend:
-              serviceName: crvx-app-svc
-              servicePort: http
+              service:
+                name: crvx-app-svc
+                port:
+                  name: http
             path: /
+            pathType: Prefix
   tls:
     - hosts:
         - crvx.fr
