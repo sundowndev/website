@@ -22,7 +22,7 @@
         <router-link :to="{ name: 'work' }">Work</router-link>
       </li>
       <li>
-        <router-link :to="{ name: 'resources' }">Links</router-link>
+        <router-link :to="{ name: 'links' }">Links</router-link>
       </li>
       <li>
         <router-link :to="{ name: 'sponsors' }">Sponsors</router-link>
