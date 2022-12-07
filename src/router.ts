@@ -8,6 +8,7 @@ import Contact from "./views/contact.vue";
 import Home from "./views/home.vue";
 import NotFound from "./views/404.vue";
 import Resources from "./views/resources.vue";
+import Sponsors from "./views/sponsors.vue";
 
 Vue.use(VueRouter);
 
@@ -17,6 +18,7 @@ const routes = [
   { path: "/writeups", name: "articles", component: Articles },
   { path: "/work", name: "work", component: Work },
   { path: "/resources", name: "resources", component: Resources },
+  { path: "/sponsors", name: "sponsors", component: Sponsors },
   { path: "/contact", name: "contact", component: Contact },
   { path: "*", component: NotFound }
 ];

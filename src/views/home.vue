@@ -22,11 +22,11 @@
         <router-link :to="{ name: 'work' }">Work</router-link>
       </li>
       <li>
-        <router-link :to="{ name: 'resources' }">Resources</router-link>
+        <router-link :to="{ name: 'resources' }">Links</router-link>
       </li>
-      <!-- <li>
-            <router-link :to="{ name: 'stats' }">Stats</router-link>
-      </li>-->
+      <li>
+        <router-link :to="{ name: 'sponsors' }">Sponsors</router-link>
+      </li>
       <li>
         <router-link :to="{ name: 'contact' }">Contact</router-link>
       </li>

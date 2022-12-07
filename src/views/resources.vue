@@ -1,9 +1,9 @@
 <template>
   <section class="section">
     <router-link :to="{ name: 'home' }" id="back-link">Back</router-link>
-    <h1 class="title-section">Resources</h1>
+    <h1 class="title-section">Links</h1>
 
-    <p>Here, you can find a personal selection of awesome resources.</p>
+    <p>Here, you can find a personal collection of awesome links.</p>
 
     <h2>Privacy & security</h2>
 
