@@ -11,8 +11,9 @@
     "test:e2e": "exit 0"
   },
   "dependencies": {
-    "core-js": "3.6.4",
+    "core-js": "3.26.1",
     "vue": "2.6.11",
+    "vue-resource": "1.5.3",
     "vue-router": "3.4.6"
   },
   "devDependencies": {
