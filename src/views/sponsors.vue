@@ -65,7 +65,9 @@ export default Vue.extend({
     };
   },
   async created() {
-    this.sponsors = await this.fetchSponsors();
+    this.sponsors = (await this.fetchSponsors()).filter(
+      (s: Sponsor) => s.monthlyDollars > 0
+    );
   },
   methods: {
     async fetchSponsors(): Promise<Sponsor[]> {
@@ -79,11 +81,6 @@ export default Vue.extend({
 </script>
 
 <style>
-.loading-text {
-  font-style: italic;
-  font-size: 14px;
-}
-
 .sponsor-badge {
   margin: 10px;
   display: inline-block;
