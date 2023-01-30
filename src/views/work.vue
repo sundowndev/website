@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <router-link :to="{ name: 'home' }" id="back-link">Back</router-link>
+    <ReturnLink />
     <h1 class="title-section">Work</h1>
 
     <p>
@@ -35,8 +35,8 @@
     <p>
       No. I'm currently working full-time on independent open source projects,
       so I'm not actively looking for a job. If you're interested into donating
-      or sponsoring me, please feel free to
-      <router-link :to="{ name: 'contact' }">send an email</router-link>.
+      or sponsoring me, refer to
+      <router-link :to="{ name: 'sponsors' }">the sponsoring page</router-link>.
     </p>
   </section>
 </template>
@@ -44,8 +44,10 @@
 <script lang="ts">
 import Vue from "vue";
 import config from "../config";
+import ReturnLink from "@/components/return-link.vue";
 
 export default Vue.extend({
+  components: { ReturnLink },
   data() {
     return {
       config

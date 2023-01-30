@@ -2,9 +2,7 @@
   <section class="section text-center">
     <div><img src="../static/error.gif" alt /></div>
     <p>
-      <router-link :to="{ name: 'home' }" id="back-link"
-        >Take me home, please</router-link
-      >
+      <router-link :to="{ name: 'home' }">Take me home, please</router-link>
     </p>
   </section>
 </template>

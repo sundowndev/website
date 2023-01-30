@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <router-link :to="{ name: 'home' }" id="back-link">Back</router-link>
+    <ReturnLink />
     <h1 class="title-section">Sponsors</h1>
 
     <p>
@@ -39,6 +39,7 @@
 
 <script lang="ts">
 import Vue from "vue";
+import ReturnLink from "@/components/return-link.vue";
 
 interface Sponsor {
   sponsor: {
@@ -59,6 +60,7 @@ interface Sponsor {
 }
 
 export default Vue.extend({
+  components: { ReturnLink },
   data() {
     return {
       sponsors: [] as Sponsor[]
