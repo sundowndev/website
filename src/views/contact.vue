@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <router-link :to="{ name: 'home' }" id="back-link">Back</router-link>
+    <ReturnLink />
     <h1 class="title-section">Contact</h1>
 
     <h2>Social media</h2>
@@ -8,6 +8,11 @@
       I'm not really into social media but you can find me on
       <a :href="config.links.social.twitter" target="_blank">Twitter</a> and
       <a :href="config.links.social.linkedin" target="_blank">LinkedIn</a>.
+    </p>
+
+    <p>
+      Please <strong>don't</strong> send me direct messages on Twitter, I don't
+      read them.
     </p>
 
     <h2>Email</h2>
@@ -21,12 +26,14 @@
 <script lang="ts">
 import Vue from "vue";
 import config from "../config";
+import ReturnLink from "@/components/return-link.vue";
 
 export default Vue.extend({
+  components: { ReturnLink },
   data() {
     return {
       config,
-      email: "<raphael.at.crvx.fr>"
+      email: "raphael.at.crvx.fr"
     };
   }
 });

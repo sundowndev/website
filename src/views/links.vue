@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <router-link :to="{ name: 'home' }" id="back-link">Back</router-link>
+    <ReturnLink />
     <h1 class="title-section">Links</h1>
 
     <p>Here, you can find a personal collection of awesome links.</p>
@@ -34,6 +34,7 @@
 <script lang="ts">
 import Vue from "vue";
 import { Link } from "../types";
+import ReturnLink from "@/components/return-link.vue";
 
 interface Resources {
   privacy: Link[];
@@ -97,6 +98,7 @@ const links: Resources = {
 };
 
 export default Vue.extend({
+  components: { ReturnLink },
   data() {
     return { links };
   }

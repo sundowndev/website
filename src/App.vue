@@ -378,8 +378,7 @@ a:hover {
   border-bottom: 2px solid #161616d2;
 }
 
-#back-link {
-  margin-bottom: 10px;
-  display: inline-block;
+strong {
+  font-weight: bold;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <router-link :to="{ name: 'home' }" id="back-link">Back</router-link>
+    <ReturnLink />
     <h1 class="title-section">Write-ups</h1>
 
     <p>
@@ -22,6 +22,7 @@
 import Vue from "vue";
 import config from "../config";
 import { Link } from "../types";
+import ReturnLink from "@/components/return-link.vue";
 
 const articles: Link[] = [
   {
@@ -42,6 +43,7 @@ const articles: Link[] = [
 ];
 
 export default Vue.extend({
+  components: { ReturnLink },
   data() {
     return {
       config,
