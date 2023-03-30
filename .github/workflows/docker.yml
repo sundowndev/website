@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Publish to Registry
         id: publish
-        uses: elgohr/Publish-Docker-Github-Action@2.22
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: sundowndev/website
           username: ${{ secrets.DOCKER_USERNAME }}
