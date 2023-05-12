@@ -33,9 +33,9 @@
 
     <h2>Are you available for hire ?</h2>
     <p>
-      No. I'm currently working full-time on independent open source projects,
-      so I'm not actively looking for a job. If you're interested into donating
-      or sponsoring me, refer to
+      Yes! I'm open to receive freelance missions. I'm currently operating on
+      [Malt](https://www.malt.fr/profile/raphaelcerveaux), which is a french marketplace for freelancers.
+      If you're interested into donating or sponsoring me, refer to
       <router-link :to="{ name: 'sponsors' }">the sponsoring page</router-link>.
     </p>
   </section>
