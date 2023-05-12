@@ -16,7 +16,7 @@ spec:
         app: crvx-app
     spec:
       containers:
-        - image: sundowndev/website@sha256:e2037ffe3cb1caf9c3b80a6403b7308dddacad6d6cc85fce86a001e9ee20212d
+        - image: sundowndev/website@sha256:5a873acd7c2e713076e3dbcab28abebf7630ee4296a889eb1795a181afee740d
           name: crvx-app
           imagePullPolicy: Always
           ports:
