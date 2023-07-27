@@ -6,13 +6,7 @@
     <h2>Social media</h2>
     <p>
       I'm not really into social media but you can find me on
-      <a :href="config.links.social.twitter" target="_blank">Twitter</a> and
       <a :href="config.links.social.linkedin" target="_blank">LinkedIn</a>.
-    </p>
-
-    <p>
-      Please <strong>don't</strong> send me direct messages on Twitter, I don't
-      read them.
     </p>
 
     <h2>Email</h2>
