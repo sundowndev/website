@@ -31,7 +31,7 @@ export default {
   },
   methods: {
     async fetchSponsors(): Promise<Sponsor[]> {
-      const res = await this.$http.get(
+      const res = await fetch(
         'https://raw.githubusercontent.com/sundowndev/static/main/sponsors.json'
       )
       return res.json()
