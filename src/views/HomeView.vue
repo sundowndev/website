@@ -1,6 +1,12 @@
 <template>
   <section class="section text-center">
-    <img src="../assets/avatar.jpg" class="margin-bottom avatar" width="128" height="auto" alt="" />
+    <img
+      src="../assets/avatar.jpg"
+      class="margin-bottom avatar"
+      width="128"
+      height="auto"
+      alt=""
+    />
 
     <h1 class="title-section">Raphaël Cerveaux</h1>
 

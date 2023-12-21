@@ -1,16 +1,16 @@
 <script lang="ts">
-import config from '../config'
-import ReturnLink from '@/components/ReturnLink.vue'
+import config from "../config";
+import ReturnLink from "@/components/ReturnLink.vue";
 
 export default {
   components: { ReturnLink },
   data() {
     return {
       config,
-      email: 'raphael.at.crvx.fr'
-    }
-  }
-}
+      email: "raphael.at.crvx.fr",
+    };
+  },
+};
 </script>
 
 <template>

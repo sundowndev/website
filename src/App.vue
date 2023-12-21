@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
-import config from '@/config'
+import { RouterView } from "vue-router";
+import config from "@/config";
 </script>
 
 <template>
   <div id="app" class="container main-content">
     <RouterView v-slot="{ Component }">
       <Transition mode="out-in">
-          <component :is="Component" />
+        <component :is="Component" />
       </Transition>
     </RouterView>
 
