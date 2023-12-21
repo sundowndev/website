@@ -1,3 +1,18 @@
+<script lang="ts">
+import config from '../config'
+import ReturnLink from '@/components/ReturnLink.vue'
+
+export default {
+  components: { ReturnLink },
+  data() {
+    return {
+      config,
+      email: 'raphael.at.crvx.fr'
+    }
+  }
+}
+</script>
+
 <template>
   <section class="section">
     <ReturnLink />
@@ -16,19 +31,3 @@
     </p>
   </section>
 </template>
-
-<script lang="ts">
-import Vue from "vue";
-import config from "../config";
-import ReturnLink from "@/components/return-link.vue";
-
-export default Vue.extend({
-  components: { ReturnLink },
-  data() {
-    return {
-      config,
-      email: "raphael.at.crvx.fr"
-    };
-  }
-});
-</script>
