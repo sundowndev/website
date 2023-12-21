@@ -1,11 +1,11 @@
-import Vue, { CreateElement } from "vue";
-import App from "./App.vue";
-import router from "./router";
-import VueResource from "vue-resource";
+import './assets/main.css'
 
-Vue.use(VueResource);
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router'
 
-export default new Vue({
-  router,
-  render: (h: CreateElement) => h(App)
-}).$mount("#app");
+const app = createApp(App)
+
+app.use(router)
+
+app.mount('#app')

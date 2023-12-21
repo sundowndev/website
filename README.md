@@ -1,39 +1,33 @@
-# Website
-
-<div align="left">
-  <a href="https://github.com/sundowndev/website/actions">
-    <img src="https://img.shields.io/endpoint.svg?url=https://actions-badge.atrox.dev/sundowndev/website/badge?ref=master" alt="build status" />
-  </a>
-  <a href="https://github.com/sundowndev/website/releases">
-    <img src="https://img.shields.io/github/release/sundowndev/website.svg" alt="Latest version" />
-  </a>
-</div>
+# website
 
 2019 version of my personal website.
 
-## Stack
+## Project Setup
 
-Vue 3.x + Typescript
-
-## Project setup
-```
-yarn install
+```sh
+npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
 ```
 
-### Compiles and minifies for production
-```
-yarn build
+### Type-Check, Compile and Minify for Production
+
+```sh
+npm run build
 ```
 
-### Lints and fixes files
-```
-yarn lint
+### Run Unit Tests with [Vitest](https://vitest.dev/)
+
+```sh
+npm run test:unit
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
