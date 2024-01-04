@@ -20,6 +20,9 @@
         <RouterLink :to="{ name: 'work' }">Work</RouterLink>
       </li>
       <li>
+        <RouterLink :to="{ name: 'fpv' }">FPV</RouterLink>
+      </li>
+      <li>
         <RouterLink :to="{ name: 'links' }">Links</RouterLink>
       </li>
       <li>
@@ -46,3 +49,4 @@ ul li a {
   border-radius: 50%;
 }
 </style>
+<script setup></script>
