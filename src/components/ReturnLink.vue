@@ -1,5 +1,5 @@
 <template>
-  <RouterLink :to="{ name: 'home' }" id="back-link">Back </RouterLink>
+  <RouterLink :to="{ name: 'home' }" id="back-link">Back</RouterLink>
 </template>
 
 <style scoped>

@@ -3,8 +3,35 @@ import { RouterView } from "vue-router";
 import config from "@/config";
 </script>
 
+<script lang="ts">
+export default {
+  data() {
+    return {
+      darkMode: false,
+    };
+  },
+  methods: {
+    toggleDarkMode() {
+      this.darkMode = document.querySelector("body").classList.toggle("dark");
+    },
+  },
+  created() {
+    if (
+      this.darkMode !==
+      document.querySelector("body").classList.contains("dark")
+    ) {
+      this.toggleDarkMode();
+    }
+  },
+};
+</script>
+
 <template>
-  <div id="app" class="container main-content">
+  <div id="top-mode-btn">
+    <span v-if="darkMode" @click="toggleDarkMode">light mode</span>
+    <span v-else @click="toggleDarkMode">dark mode</span>
+  </div>
+  <div class="container main-content">
     <RouterView v-slot="{ Component }">
       <Transition mode="out-in">
         <component :is="Component" />
