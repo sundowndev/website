@@ -7,16 +7,23 @@ import config from "@/config";
 export default {
   data() {
     return {
-      darkMode: false,
+      darkMode: true, // Default value for dark mode
     };
   },
   methods: {
     toggleDarkMode() {
       this.darkMode =
         document.querySelector("body")?.classList.toggle("dark") || false;
+      localStorage.setItem("mode", this.darkMode ? "dark" : "light");
     },
   },
   created() {
+    // Get dark mode value from local storage if it exists
+    const modeFromStorage = localStorage.getItem("mode");
+    if (modeFromStorage == null) {
+      localStorage.setItem("mode", this.darkMode ? "dark" : "light");
+    } else this.darkMode = modeFromStorage == "dark";
+
     if (
       this.darkMode !==
       document.querySelector("body")?.classList.contains("dark")
