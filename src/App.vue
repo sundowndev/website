@@ -12,13 +12,14 @@ export default {
   },
   methods: {
     toggleDarkMode() {
-      this.darkMode = document.querySelector("body").classList.toggle("dark");
+      this.darkMode =
+        document.querySelector("body")?.classList.toggle("dark") || false;
     },
   },
   created() {
     if (
       this.darkMode !==
-      document.querySelector("body").classList.contains("dark")
+      document.querySelector("body")?.classList.contains("dark")
     ) {
       this.toggleDarkMode();
     }
