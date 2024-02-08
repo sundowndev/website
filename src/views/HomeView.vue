@@ -20,6 +20,9 @@
         <RouterLink :to="{ name: 'work' }">Work</RouterLink>
       </li>
       <li>
+        <RouterLink :to="{ name: 'fpv' }">FPV</RouterLink>
+      </li>
+      <li>
         <RouterLink :to="{ name: 'links' }">Links</RouterLink>
       </li>
       <li>
