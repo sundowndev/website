@@ -19,9 +19,13 @@ export default {
       editing videos. This new hobby allowed me to try something else and create
       content while travelling. FPV (First Person View) drones are hand-crafted
       drones designed mainly for racing. They're also commonly used in the
-      industry of filmmaking to make creative aerial shots. I'm willing to
-      pursue my engineering career while continuing to learn about drone
-      engineering and flying.
+      industry of filmmaking to make creative aerial shots. During this year, I
+      learned a lot about video editing, color grading, and action cameras.
+    </p>
+
+    <p>
+      I'm willing to pursue my engineering career while continuing to learn
+      about drone engineering and flying.
     </p>
 
     <p>
@@ -36,8 +40,8 @@ export default {
     </p>
 
     <p>
-      <strong>Have a job opportunity in filmmaking for me ?</strong>
-      <RouterLink :to="{ name: 'contact' }">Contact me!</RouterLink>
+      <strong>Have a job opportunity in filmmaking for me ? </strong>
+      <RouterLink :to="{ name: 'contact' }">Get in touch !</RouterLink>
     </p>
 
     <h2>Showreel 2023</h2>
