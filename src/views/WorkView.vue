@@ -24,10 +24,10 @@ export default {
         href="https://en.wikipedia.org/wiki/Open-source_intelligence"
         target="_blank"
         >OSINT</a
-      >, pen testing, DevSecOps tools, cloud-native applications, Kubernetes and
-      Golang. I love helping saving other developers' time. Most of the software
-      I build are made for developers so I try to create great developer
-      experiences by using my own experience as a software engineer.
+      >, penetration testing, DevSecOps, cloud-native concepts, Kubernetes and
+      Golang. Despite my interest for technical topics, I love working on
+      impactful and meaningful products. What matters to me is providing value
+      to people and industries through high quality software design.
     </p>
 
     <h2>Code</h2>
@@ -47,11 +47,13 @@ export default {
 
     <h2>Are you available for hire ?</h2>
     <p>
-      Yes! I'm open to receive freelance missions. I'm currently operating on
-      <a href="https://www.malt.fr/profile/raphaelcerveaux" target="_blank"
-        >Malt</a
-      >, a french marketplace for freelancers. If you're interested into
-      donating or sponsoring me, refer to
+      Yes! I'm willing to relocate or work in remote. If you have an opportunity
+      you think would suit my profile, please
+      <router-link :to="{ name: 'contact' }">reach out</router-link>. I'd be
+      happy to share my resume privately.
+    </p>
+    <p>
+      If you're interested into donating or sponsoring me, refer to
       <router-link :to="{ name: 'sponsors' }">the sponsoring page</router-link>.
     </p>
   </section>

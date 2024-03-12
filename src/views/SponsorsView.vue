@@ -48,8 +48,8 @@ export default {
     <h1 class="title-section">Sponsors</h1>
 
     <p>
-      I'm an independent full-time software engineer. My ultimate goal is to
-      make a living out of Open Source. So if you would like to support my
+      I love contributing to Open Source software! It has always been a goal to
+      monetize my Open Source activity, so if you would like to support my
       future work, consider joining me as a sponsor!
     </p>
 
