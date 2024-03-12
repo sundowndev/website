@@ -16,11 +16,11 @@ export default {
 
     <p>
       In 2023 I put my engineering career on stand-by to learn to fly drones and
-      editing videos. This new hobby allowed me to try something else and create
+      editing videos. This new hobby allowed me to try something new and create
       content while travelling. FPV (First Person View) drones are hand-crafted
       drones designed mainly for racing. They're also commonly used in the
       industry of filmmaking to make creative aerial shots. During this year, I
-      learned a lot about video editing, color grading, and action cameras.
+      learned a lot about video editing, color grading, and sound design.
     </p>
 
     <p>
