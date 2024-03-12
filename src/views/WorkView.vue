@@ -25,7 +25,9 @@ export default {
         target="_blank"
         >OSINT</a
       >, penetration testing, DevSecOps, cloud-native concepts, Kubernetes and
-      Golang. Despite my interest for technical topics, I love working on impactful and meaningful products. What matters to me is providing value to people and industries through high quality software design.
+      Golang. Despite my interest for technical topics, I love working on
+      impactful and meaningful products. What matters to me is providing value
+      to people and industries through high quality software design.
     </p>
 
     <h2>Code</h2>
@@ -45,8 +47,14 @@ export default {
 
     <h2>Are you available for hire ?</h2>
     <p>
-      Yes! I'm willing to relocate or work in remote. If you have an opportunity you think would suit my profile, please <router-link :to="{ name: 'contact' }">reach out</router-link>.
+      Yes! I'm willing to relocate or work in remote. If you have an opportunity
+      you think would suit my profile, please
+      <router-link :to="{ name: 'contact' }">reach out</router-link>. I'd be
+      happy to share my resume privately.
     </p>
-    <p>If you're interested into donating or sponsoring me, refer to <router-link :to="{ name: 'sponsors' }">the sponsoring page</router-link>.</p>
+    <p>
+      If you're interested into donating or sponsoring me, refer to
+      <router-link :to="{ name: 'sponsors' }">the sponsoring page</router-link>.
+    </p>
   </section>
 </template>
