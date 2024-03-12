@@ -48,7 +48,7 @@ export default {
     <h1 class="title-section">Sponsors</h1>
 
     <p>
-      I love contribute to Open Source software! It has always been a goal to
+      I love contributing to Open Source software! It has always been a goal to
       monetize my Open Source activity, so if you would like to support my
       future work, consider joining me as a sponsor!
     </p>
