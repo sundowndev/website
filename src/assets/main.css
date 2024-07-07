@@ -212,7 +212,7 @@ img {
 }
 
 body.dark .section img.avatar {
-  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4)) sepia(80%);
+  filter: drop-shadow(0 0 0.75rem rgba(219, 196, 30, 0.1)) sepia(35%);
 }
 
 .container {
