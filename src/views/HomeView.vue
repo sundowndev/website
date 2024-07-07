@@ -1,7 +1,7 @@
 <template>
   <section class="section text-center">
     <img
-      src="../assets/avatar.jpg"
+      src="../assets/avatar.webp"
       class="margin-bottom avatar"
       width="128"
       height="auto"
