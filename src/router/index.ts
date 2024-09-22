@@ -14,7 +14,7 @@ const router = createRouter({
     { path: "/", name: "home", component: HomeView },
     { path: "/writeups", name: "articles", component: Articles },
     { path: "/work", name: "work", component: Work },
-    { path: "/fpv", name: "fpv", component: Filmmaking },
+    { path: "/filmmaking", name: "fpv", component: Filmmaking },
     { path: "/links", name: "links", component: Links },
     { path: "/sponsors", name: "sponsors", component: Sponsors },
     { path: "/contact", name: "contact", component: Contact },
@@ -23,6 +23,7 @@ const router = createRouter({
     // Handle legacy paths
     { path: "/articles", redirect: "/writeups" },
     { path: "/resources", redirect: "/links" },
+    { path: "/fpv", redirect: "/filmmaking" },
   ],
 });
 

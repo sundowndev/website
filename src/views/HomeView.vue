@@ -10,23 +10,20 @@
 
     <h1 class="title-section">Raphaël Cerveaux</h1>
 
-    <p>Hi, I'm a Software Engineer from Reunion Island 🇷🇪 🇫🇷</p>
+    <p>Hi, I'm a Software Engineer and Filmmaker from Reunion Island 🇷🇪 🇫🇷</p>
 
     <ul>
       <li>
         <RouterLink :to="{ name: 'articles' }">Write-ups</RouterLink>
       </li>
       <li>
-        <RouterLink :to="{ name: 'work' }">Work</RouterLink>
+        <RouterLink :to="{ name: 'work' }">Softwares</RouterLink>
       </li>
       <li>
-        <RouterLink :to="{ name: 'fpv' }">FPV</RouterLink>
+        <RouterLink :to="{ name: 'fpv' }">Filmmaking</RouterLink>
       </li>
       <li>
-        <RouterLink :to="{ name: 'links' }">Links</RouterLink>
-      </li>
-      <li>
-        <RouterLink :to="{ name: 'sponsors' }">Sponsors</RouterLink>
+        <RouterLink :to="{ name: 'sponsors' }">Sponsoring</RouterLink>
       </li>
       <li>
         <RouterLink :to="{ name: 'contact' }">Contact</RouterLink>

@@ -15,7 +15,7 @@ export default {
 <template>
   <section class="section">
     <ReturnLink />
-    <h1 class="title-section">Work</h1>
+    <h1 class="title-section">Software engineering</h1>
 
     <p>
       I'm highly involved into open source software and willing to make a living
@@ -47,10 +47,9 @@ export default {
 
     <h2>Are you available for hire ?</h2>
     <p>
-      Yes! I'm willing to relocate or work in remote. If you have an opportunity
-      you think would suit my profile, please
-      <router-link :to="{ name: 'contact' }">reach out</router-link>. I'd be
-      happy to share my resume privately.
+      I'm not actively looking for a job. If you have an opportunity you think
+      would suit my profile, feel free to
+      <router-link :to="{ name: 'contact' }">reach out</router-link>.
     </p>
     <p>
       If you're interested into donating or sponsoring me, refer to
