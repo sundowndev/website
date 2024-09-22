@@ -24,8 +24,8 @@ export default {
     </p>
 
     <p>
-      I'm willing to pursue my engineering career while continuing to learn
-      about drone engineering and flying.
+      I'm willing to pursue my software engineering career while continuing to
+      learn about drone engineering and flying.
     </p>
 
     <p>
@@ -44,7 +44,19 @@ export default {
       <RouterLink :to="{ name: 'contact' }">Get in touch !</RouterLink>
     </p>
 
-    <h2>Showreel 2023</h2>
+    <h2 class="margin-top-30">MMA gym showreel (2024)</h2>
+    <p>Small presentation clip for my MMA gym.</p>
+    <div class="videoWrapper">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/Rb79TZ4DTP4"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <h2 class="margin-top-30">Showreel 2023</h2>
 
     <p>
       Here's my 2023 showreel showing up my best drone shots of the year in
@@ -53,7 +65,7 @@ export default {
 
     <div class="videoWrapper">
       <iframe
-        src="https://www.youtube-nocookie.com/embed/QSTqfadYtgg?si=NOu6k3bk7kHCN5cS"
+        src="https://www.youtube-nocookie.com/embed/QSTqfadYtgg"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
