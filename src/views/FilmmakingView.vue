@@ -44,8 +44,20 @@ export default {
       <RouterLink :to="{ name: 'contact' }">Get in touch !</RouterLink>
     </p>
 
+    <h2 class="margin-top-30">Showreel 2024</h2>
+    <p>Here's my 2024 showreel showing up my best drone shots of 2024! 🏝️</p>
+    <div class="videoWrapper">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/PD1neSpaRTY"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    
     <h2 class="margin-top-30">MMA gym showreel (2024)</h2>
-    <p>Small presentation clip for my MMA gym.</p>
+    <p>Small presentation clip for Kreol FC, martial arts gym.</p>
     <div class="videoWrapper">
       <iframe
         src="https://www.youtube-nocookie.com/embed/Rb79TZ4DTP4"
