@@ -33,10 +33,7 @@ export default {
     <h2>Code</h2>
     <p>
       Most of my code is hosted on
-      <a :href="config.links.social.github" target="_blank">GitHub</a>, but I
-      also have a
-      <a :href="config.links.social.gitlab" target="_blank">GitLab</a> account
-      mostly used for mirroring projects.
+      <a :href="config.links.social.github" target="_blank">GitHub</a>.
     </p>
 
     <p>
