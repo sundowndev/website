@@ -45,12 +45,6 @@ export default {
         <component :is="Component" />
       </Transition>
     </RouterView>
-
-    <span id="bottom-note">
-      <a :href="config.repository" target="_blank">
-        <img src="./assets/fork-banner.png" alt="" />
-      </a>
-    </span>
   </div>
 </template>
 
