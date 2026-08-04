@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router";
 import config from "@/config";
+import { SpeedInsights } from "@vercel/speed-insights/vue";
 </script>
 
 <script lang="ts">
@@ -35,6 +36,7 @@ export default {
 </script>
 
 <template>
+  <SpeedInsights />
   <div id="top-mode-btn">
     <span v-if="darkMode" @click="toggleDarkMode">light mode</span>
     <span v-else @click="toggleDarkMode">dark mode</span>
