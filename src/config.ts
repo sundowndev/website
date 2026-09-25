@@ -1,4 +1,5 @@
 export default {
+  url: "https://crvx.fr",
   repository: "https://github.com/sundowndev/website",
   links: {
     social: {
