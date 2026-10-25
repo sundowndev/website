@@ -44,8 +44,8 @@ export default {
 
     <h2>Are you available for hire ?</h2>
     <p>
-      I'm not actively looking for a job. If you have an opportunity you think
-      would suit my profile, feel free to
+      Yes! I'm open to consulting and full-time jobs. If you have an opportunity
+      that you think would suit my profile, feel free to
       <router-link :to="{ name: 'contact' }">reach out</router-link>.
     </p>
     <p>
